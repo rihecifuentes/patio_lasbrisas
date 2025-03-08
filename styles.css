@@ -1,0 +1,12 @@
+/* Personalización básica */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre 10 experiencias gastronómicas únicas en nuestro patio de comidas">
+    <title>Patio Las Brisas | Gastronomía & Entretención</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos Personalizados -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --color-primary: #ff6b6b;
+            --color-dark: #2d3436;
+            --color-light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-dark);
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            height: 70vh;
+            /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/image1.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .brand-logo {
+            /* width: 180px; */
+            /* filter: brightness(0) invert(1); */
+        }
+
+        .card-vendor {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .card-vendor:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .vendor-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--color-primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+
+        .footer-links a {
+            color: var(--color-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-50 ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.jpg" width="80" alt="Food Plaza Logo" class="brand-logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 mb-4">Patio Las Brisas </h1>
+                    <p class="lead mb-5">Conceptos culinarios únicos en un espacio diseñado para amantes de la buena comida en la Cisterna</p>
+                    <a href="#locales" class="btn btn-primary btn-lg px-5 py-3">Explorar Locales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Locales -->
+    <section id="locales" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Nuestros Locales</h2>
+            
+            <div class="row g-4">
+
+                <!-- Local 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-vendor">
+                        <div class="position-relative">
+                            <img src="assets/Local1.jpg" class="card-img-top" alt="Burger House">
+                            <div class="vendor-badge">🍽️ Restaurante</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Restaurante Gourmet</h3>
+                            <p class="text-muted mb-4">Placer en Cada Bocado 🍽️✨</p>
+                            <a href="local-1.html" class="btn btn-outline-primary">Ver Menú</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-vendor">
+                        <div class="position-relative">
+                            <img src="assets/Local2.jpg" class="card-img-top" alt="Sushi Master">
+                            <div class="vendor-badge">☕ Café</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Cafetería Artesanal</h3>
+                            <p class="text-muted mb-4">El Aroma de la Mañana ☕🌿</p>
+                            <a href="local-2.html" class="btn btn-outline-primary">Ver Menú</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-vendor">
+                        <div class="position-relative">
+                            <img src="assets/Local3.jpg" class="card-img-top" alt="Sushi Master">
+                            <div class="vendor-badge">🍕 Pizza</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Pizzería Urbana</h3>
+                            <p class="text-muted mb-4">El Queso Derretido Perfecto 🍕🔥</p>
+                            <a href="local-3.html" class="btn btn-outline-primary">Ver Menú</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-vendor">
+                        <div class="position-relative">
+                            <img src="assets/Local4.jpg" class="card-img-top" alt="Sushi Master">
+                            <div class="vendor-badge">🌮 Mexicano</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Comida Mexicana </h3>
+                            <p class="text-muted mb-4">Sabor Callejero Auténtico 🌮🎉</p>
+                            <a href="local-4.html" class="btn btn-outline-primary">Ver Menú</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-vendor">
+                        <div class="position-relative">
+                            <img src="assets/Local5.jpg" class="card-img-top" alt="Sushi Master">
+                            <div class="vendor-badge">🥖 Panaderia</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Panadería Artesanal</h3>
+                            <p class="text-muted mb-4">Pan Caliente Recién Horneado 🥖🍞</p>
+                            <a href="local-5.html" class="btn btn-outline-primary">Ver Menú</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-vendor">
+                        <div class="position-relative">
+                            <img src="assets/Local6.jpg" class="card-img-top" alt="Sushi Master">
+                            <div class="vendor-badge">🍸 Bar</div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="h5 mb-3">Barra de Patio</h3>
+                            <p class="text-muted mb-4">Noche de Mixología 🍸🌙</p>
+                            <a href="local-6.html" class="btn btn-outline-primary">Ver Menú</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="assets/logo.jpg" alt="Food Plaza Logo" class="brand-logo mb-3">
+                    <p class="text-muted">Creadores de experiencias gastronómicas desde 2024</p>
+                </div>
+                
+                <div class="col-lg-4 footer-links">
+                    <h4 class="mb-4">Horarios</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Lunes a Viernes: 10 AM - 10 PM</li>
+                        <li class="mb-2">Sábados: 11 AM - 12 PM</li>
+                        <li>Domingos: 11 AM - 10 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 footer-links">
+                    <h4 class="mb-4">Contacto</h4>
+                    <p>📍 Las Brisas #91, La Cisterna - Chile <a href="https://maps.app.goo.gl/dviu4c1gSmvrhtHr6" target="_blank" rel="noopener noreferrer">[Maps]</a></p> 
+                    <p>📞 +1 234 567 890</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.instagram.com/patiolasbrisas/" target="_blank" rel="noopener noreferrer"> <i class="fab fa-instagram fa-2x m-2"></i> </a>
+                        <!-- <a href="#" class="me-3"><i class="fab fa-instagram"></i></a> -->
+                        <!-- <a href="#" class="me-3"><i class="fab fa-facebook"></i></a> -->
+                        <!-- <a href="#"><i class="fab fa-tiktok"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</body>
+</html>
